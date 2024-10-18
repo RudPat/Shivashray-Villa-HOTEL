@@ -1,0 +1,159 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/WhatsApp Image 2024-10-14 at 14.41.41_0dfb5b92.jpg');
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 50px; /* Increased font size */
+    line-height: 1.5; /* Optional: Better readability */
+}
+
+
+.cta-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 20px 40px; /* Increased padding */
+    font-size: 20px; /* Larger font size */
+    text-decoration: none;
+    border-radius: 10px; /* Slightly larger border radius */
+    margin-top: 15px; /* More margin for spacing */
+    display: inline-block; /* Ensures proper button appearance */
+}
+
+/* Section Styles */
+.about, .rooms, .gallery, .contact, .location {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Location and Rooms Section */
+.location-rooms {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+/* Location Section */
+.location {
+    flex: 1;
+    text-align: left;
+}
+
+.location h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+.location p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Rooms Section */
+.rooms {
+    flex: 1;
+    text-align: right;
+}
+
+.rooms h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.rooms .room {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.rooms .room h3 {
+    margin: 0;
+    color: #555;
+}
+
+.rooms .room p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Book Now Button Styling */
+.rooms a.cta-button { /* Targeting the button within the rooms section */
+    display: inline-block; /* Make it behave like a block element */
+    margin-top: 20px; /* Space above the button */
+    text-align: center; /* Center the text inside the button */
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

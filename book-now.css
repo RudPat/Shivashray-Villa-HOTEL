@@ -1,0 +1,145 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Optionally switch to 'Poppins' or 'Roboto' */
+    background-color: #f0f4f8; /* Softer background for improved readability */
+    color: #333;
+    line-height: 1.6; /* Enhanced line height for clarity */
+}
+
+/* Header Styles */
+header {
+    background-color: #2c3e50; /* Darker color for consistency */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Better spacing between items */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6347; /* Accent color for hover effect */
+}
+
+/* Booking Form Section */
+.booking-form-section {
+    padding: 60px 30px;
+    text-align: center;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    border-radius: 15px; /* Smoother corner radius */
+}
+
+.booking-form-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #2c3e50; /* Darker heading color */
+    font-weight: bold;
+}
+
+.booking-form-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+form input, form select, form button {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Smoother rounded corners */
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form select:focus {
+    border-color: #2c3e50; /* Accent border on focus */
+    outline: none;
+}
+
+form label {
+    text-align: left;
+    width: 80%;
+    max-width: 400px;
+    margin-top: 10px;
+    color: #333;
+    font-weight: 600;
+}
+
+form button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50; /* Consistent footer color */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Top shadow for separation */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .booking-form-section {
+        padding: 40px 15px;
+    }
+
+    form input, form select, form button {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}

@@ -1,0 +1,104 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Consider 'Poppins' or 'Open Sans' for a modern look */
+    background-color: #eef1f7; /* Softer background for better aesthetics */
+    color: #333;
+    line-height: 1.6; /* Improved readability */
+}
+
+/* Header Section */
+header {
+    background-color: #2c3e50; /* Slightly darker tone for a sleek appearance */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Improved spacing between items */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6347; /* Accent color for better interaction */
+}
+
+/* About Us Section */
+.about {
+    padding: 60px 30px;
+    text-align: center;
+    background-color: #fff;
+    max-width: 900px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* About Us Heading */
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50; /* More contrast for better visual impact */
+    font-weight: bold;
+}
+
+/* About Us Content */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem; /* Slightly larger font for improved readability */
+    color: #555;
+    line-height: 1.8; /* Increased line spacing for better readability */
+}
+
+/* Paragraph Styling */
+.about-content p {
+    margin-bottom: 20px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Subtle top shadow for separation */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .about {
+        padding: 40px 15px;
+    }
+}

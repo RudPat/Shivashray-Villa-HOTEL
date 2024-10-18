@@ -1,0 +1,236 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; 
+    background-color: #3e2723; /* Warm brown background */
+    color: #f5f5f5; /* Light color for readability */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #5d4037; /* Darker brown */
+    color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #d7ccc8; /* Soft beige for hover */
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/WhatsApp Image 2024-10-14 at 14.41.41_0dfb5b92.jpg') no-repeat center center/cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    padding: 0 20px;
+}
+
+.cta-button {
+    background-color: #a1887f; /* Light brown button */
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #8d6e63;
+}
+
+/* Section Styles */
+.about, .rooms, .gallery, .contact, .location {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Location and Rooms Section */
+.location-rooms {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+/* Location Section */
+.location {
+    flex: 1;
+    text-align: left;
+}
+
+.location h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    border: none;
+    border-radius: 10px;
+}
+
+.location p {
+    font-size: 1.2rem;
+    color: #d7ccc8;
+}
+
+/* Rooms Section */
+.rooms {
+    flex: 1;
+    text-align: right;
+}
+
+.rooms h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+}
+
+.rooms .room {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #795548; /* Medium brown */
+    color: #f5f5f5;
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+}
+
+.rooms .room:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery Section */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #8d6e63;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #5d4037;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #4e342e;
+}
+
+/* Footer Section */
+footer {
+    background-color: #5d4037;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .location-rooms {
+        flex-direction: column;
+    }
+
+    .rooms .room {
+        flex-direction: column;
+    }
+
+    .hero {
+        font-size: 2rem;
+        height: 400px;
+    }
+}
